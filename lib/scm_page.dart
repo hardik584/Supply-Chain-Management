@@ -127,6 +127,7 @@ class _SupplyChainPageState extends State<SupplyChainPage> {
                             'Create New Item',
                           ),
                         ),
+                        const SizedBox(height: 20),
                         for (int i = 0; i < 5; i++)
                           const Divider(color: Colors.blue, height: 1.3),
                         TextFormField(
@@ -150,6 +151,7 @@ class _SupplyChainPageState extends State<SupplyChainPage> {
                             itemStatus:
                                 contractLink.mySelectedItem!.supplyChainStatus!,
                           ),
+                        const SizedBox(height: 20),
                         ElevatedButton(
                           onPressed: () {
                             getSelectedItemFromIndex(
@@ -159,6 +161,7 @@ class _SupplyChainPageState extends State<SupplyChainPage> {
                             'Get item from index',
                           ),
                         ),
+                        const SizedBox(height: 20),
                         ElevatedButton(
                           onPressed: () {
                             payForSelectedItem(contractLink: contractLink);
@@ -167,6 +170,7 @@ class _SupplyChainPageState extends State<SupplyChainPage> {
                             'Pay for item',
                           ),
                         ),
+                        const SizedBox(height: 20),
                         ElevatedButton(
                           onPressed: () {
                             deliveryForSelectedItem(contractLink: contractLink);
