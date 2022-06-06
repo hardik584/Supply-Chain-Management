@@ -205,15 +205,13 @@ class ItemWidget extends StatelessWidget {
     return ListTile(
         leading: CircleAvatar(child: Text(itemIndex)),
         title: Text(itemAddress),
-        subtitle: Flexible(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Flexible(child: Text(itemName)),
-              const Text(' | '),
-              Flexible(child: Text(itemPrice)),
-            ],
-          ),
+        subtitle: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Flexible(child: Text(itemName)),
+            const Text(' | '),
+            Flexible(child: Text(itemPrice)),
+          ],
         ),
         trailing: ProductSupplyChainStatusBadgeWidget(
           itemStatus: itemStatus,
